@@ -1,4 +1,4 @@
-/ Defining an abstract class for common Duck properties
+// Defining an abstract class for common Duck properties
 public abstract class Duck {
     // Defining protected variables for Duck's name and its behaviors
     protected String name;
@@ -14,5 +14,11 @@ public abstract class Duck {
         this.swimBehavior = swimBehavior;
     }
 
+        // Method to display the duck's name and type
+        public void display() {
+            System.out.println("\n" + name + " behavior:");
+        }
+    
+        
 
 }
