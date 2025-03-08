@@ -46,6 +46,14 @@ public class Main {
                     System.out.println("Invalid choice! Try again.");
             }
 
+            // If a valid duck was selected, perform its actions
+            if (duck != null) {
+                duck.display(); // Shows the duck's appearance
+                duck.performFly(); // Performs fly behavior
+                duck.performQuack(); // Performs quack behavior
+                duck.performSwim(); // Performs swim behavior
+            }
+
             
         }
     }
