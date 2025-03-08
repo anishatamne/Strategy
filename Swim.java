@@ -12,5 +12,16 @@ public class Swim implements SwimBehavior {
         this.swimType = swimType;
     }
 
+    // Overriding the swim() method to define swimming behavior
+    @Override
+    public void swim() {
+        // This executes different swimming behaviors based on swimType
+        switch (swimType) {
+            case SWIM -> System.out.println("This duck is swimming gracefully.");
+            case FLOAT -> System.out.println("This duck is floating on the water.");
+            case DROWN -> System.out.println("This duck is struggling and drowning.");
+        } 
+    }
+
     
 }
